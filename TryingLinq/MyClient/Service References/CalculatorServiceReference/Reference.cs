@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyClient.ServiceReference1 {
+namespace MyClient.CalculatorServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples", ConfigurationName="ServiceReference1.ICalculator")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples", ConfigurationName="CalculatorServiceReference.ICalculator")]
     public interface ICalculator {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
@@ -41,12 +41,12 @@ namespace MyClient.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ICalculatorChannel : MyClient.ServiceReference1.ICalculator, System.ServiceModel.IClientChannel {
+    public interface ICalculatorChannel : MyClient.CalculatorServiceReference.ICalculator, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class CalculatorClient : System.ServiceModel.ClientBase<MyClient.ServiceReference1.ICalculator>, MyClient.ServiceReference1.ICalculator {
+    public partial class CalculatorClient : System.ServiceModel.ClientBase<MyClient.CalculatorServiceReference.ICalculator>, MyClient.CalculatorServiceReference.ICalculator {
         
         public CalculatorClient() {
         }

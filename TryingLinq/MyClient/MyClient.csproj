@@ -45,7 +45,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\ServiceReference1\Reference.cs">
+    <Compile Include="Service References\CalculatorServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GetLondonCustomersServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -55,12 +60,20 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference1\Microsoft.ServiceModel.Samples.wsdl" />
-    <None Include="Service References\ServiceReference1\Microsoft.ServiceModel.Samples.xsd">
+    <None Include="Service References\CalculatorServiceReference\CalculatorService.wsdl" />
+    <None Include="Service References\CalculatorServiceReference\item.wsdl" />
+    <None Include="Service References\CalculatorServiceReference\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference1\service.wsdl" />
-    <None Include="Service References\ServiceReference1\service.xsd">
+    <None Include="Service References\CalculatorServiceReference\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GetLondonCustomersServiceReference\Microsoft.ServiceModel.Samples.wsdl" />
+    <None Include="Service References\GetLondonCustomersServiceReference\Microsoft.ServiceModel.Samples.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GetLondonCustomersServiceReference\service.wsdl" />
+    <None Include="Service References\GetLondonCustomersServiceReference\service.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -68,16 +81,32 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\CalculatorServiceReference\" />
+    <WCFMetadataStorage Include="Service References\GetLondonCustomersServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\CalculatorServiceReference\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\CalculatorServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference1\Reference.svcmap">
+    <None Include="Service References\CalculatorServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculatorServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetLondonCustomersServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetLondonCustomersServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetLondonCustomersServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

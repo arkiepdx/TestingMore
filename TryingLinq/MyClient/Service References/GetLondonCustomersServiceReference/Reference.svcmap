@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e30bba71-9955-4c6a-86e6-cbb1b614e816" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2df7faeb-f3f4-4958-888e-4632aced5dca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8101/TryingLinq/Service1/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://localhost:8100/TryingLinq/London/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Microsoft.ServiceModel.Samples.wsdl" MetadataType="Wsdl" ID="4b3617e0-e1a2-482f-b677-d956137efb5c" SourceId="1" SourceUrl="http://localhost:8101/TryingLinq/Service1/mex" />
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="5fb4679a-1e0d-4b0e-833d-094291071177" SourceId="1" SourceUrl="http://localhost:8101/TryingLinq/Service1/mex" />
-    <MetadataFile FileName="Microsoft.ServiceModel.Samples.xsd" MetadataType="Schema" ID="1424c4fb-9a5a-434f-9102-86802b3910c2" SourceId="1" SourceUrl="http://localhost:8101/TryingLinq/Service1/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="d2947a13-f1f4-41d2-ab0e-b48e1b01fe27" SourceId="1" SourceUrl="http://localhost:8101/TryingLinq/Service1/mex" />
+    <MetadataFile FileName="Microsoft.ServiceModel.Samples.wsdl" MetadataType="Wsdl" ID="34fd6d9d-4073-4bae-bb68-005af6aeb331" SourceId="1" SourceUrl="http://localhost:8100/TryingLinq/London/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="241d02d8-727c-4449-945b-ba38391625d1" SourceId="1" SourceUrl="http://localhost:8100/TryingLinq/London/mex" />
+    <MetadataFile FileName="Microsoft.ServiceModel.Samples.xsd" MetadataType="Schema" ID="3ee6a856-c433-41bb-9bae-9cd7f26f34a6" SourceId="1" SourceUrl="http://localhost:8100/TryingLinq/London/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="e3186de0-de49-4993-a690-017e6633ac73" SourceId="1" SourceUrl="http://localhost:8100/TryingLinq/London/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

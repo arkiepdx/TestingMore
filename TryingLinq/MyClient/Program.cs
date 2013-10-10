@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
-using MyClient.ServiceReference1;
+using MyClient.CalculatorServiceReference;
+using MyClient.GetLondonCustomersServiceReference;
 
 
 namespace MyClient
@@ -16,7 +17,12 @@ namespace MyClient
             //Step 1: Create an instance of the WCF proxy.
             CalculatorClient client = new CalculatorClient();
 
-            
+            LondonCustomersClient otherClient = new LondonCustomersClient();
+
+            string response = otherClient.GetLondonCustomers();
+            Console.WriteLine(response);
+            Console.WriteLine("-------------"
+                );
 
             //var clientProxy = new ChannelFactory<GettingStartedLib.ICalculator>("BasicHttpBinding_ICalculator");
             //clientProxy.Open();
